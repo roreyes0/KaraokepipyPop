@@ -11,10 +11,7 @@ function addSong(songName,artistName,songUrl){
             <a href="${songUrl}" target="_blank">Reproducir</a>
             <button class="delete-btn">Eliminar</button>
     `;
-    const deleteButton = listSong.querySelector('.delete-btn');
-    deleteButton.addEventListener('click', () => {
-        playList.removeChild(listSong);
-    });
+    
 
     //agregar al html
     playList.appendChild(listSong);
